@@ -21,7 +21,7 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
   app.import('vendor/css/bootstrap-theme.min.css');
   app.import('vendor/css/bootstrap.min.css');
-  app.import('vendor/css/bootstrap.min.js')
+  app.import('vendor/js/bootstrap.min.js');
 
   return app.toTree();
 };
