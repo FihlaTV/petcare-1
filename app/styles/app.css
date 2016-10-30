@@ -32,3 +32,11 @@ a.avatar {
   max-height: 50px;
   border-radius: 50%;
 }
+.ember-cli-g-map {
+    height: 300px;
+}
+.perro{
+  height: 200px;
+  width: 250px;
+
+}

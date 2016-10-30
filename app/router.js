@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('pet', function() {
     this.route('new');
   });
+  this.route('reporte');
 });
 
 export default Router;
