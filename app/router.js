@@ -13,8 +13,7 @@ Router.map(function() {
   this.route('callejeros', {path: '/callejeros'});
   
   this.route('pet', function() {
-  	this.route('new');
-    this.route('description');
+    this.route('new');
   });
 
   this.route('reporte', {path: '/reporte'});
