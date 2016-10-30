@@ -7,10 +7,14 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('home');
+  this.route('home', {path: '/home'});
   this.route('perdidos');
   this.route('callejeros');
   this.route('report', {path: '/report'});
+  this.route('pet', function() {
+    this.route('new');
+  });
+  this.route('reporte');
 });
 
 export default Router;
