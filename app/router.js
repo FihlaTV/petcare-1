@@ -11,10 +11,12 @@ Router.map(function() {
   this.route('perdidos');
   this.route('callejeros');
   this.route('report', {path: '/report'});
+  this.route('perdidos', {path: '/perdidos'});
+  this.route('callejeros', {path: '/callejeros'});
   this.route('pet', function() {
     this.route('new');
   });
-  this.route('reporte');
+  this.route('reporte', {path: '/reporte'});
 });
 
 export default Router;
