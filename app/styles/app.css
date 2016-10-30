@@ -40,3 +40,8 @@ a.avatar {
   width: 250px;
 
 }
+
+.fileinput{
+  data-provides: 'fileinput';
+
+}
