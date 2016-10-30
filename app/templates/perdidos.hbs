@@ -1,1 +1,35 @@
-{{outlet}}
+  <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-6 well">
+          <h2 class="text-center">Perro Perdido</h2>
+        <form role="form">
+          <div class="form-group">
+            <label >Nombre</label>
+            <input type="text" class="form-control" id="ejemplo_email_1"
+                   placeholder="Nombre tu mascota">
+          </div>
+
+          <div class="form-group">
+            <label for="ejemplo_password_1">Caracteristicas</label>
+            <textarea class="form-control" id="ejemplo_password_1"
+                   placeholder="Caracteristicas"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="ejemplo_password_1">¿Donde se perdio?</label>
+            <input type="text" class="form-control" id="ejemplo_password_1"
+                   placeholder="mapa">
+          </div>
+          {{g-maps name="my-map" name="my-map" lat=lat lng=lng zoom=zoom}}
+          <br>
+          <div class="text-center">
+              <button type="submit" class="btn btn-lg btn-success">Enviar</button>
+          </div>
+
+        </form>
+      </div>
+  </div>
+</div>
