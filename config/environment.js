@@ -14,7 +14,7 @@ module.exports = function(environment) {
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
-      }
+      },
     },
 
     APP: {
@@ -22,6 +22,8 @@ module.exports = function(environment) {
       // when it is created
     }
   };
+
+
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
@@ -46,6 +48,7 @@ module.exports = function(environment) {
 
   }
   ENV.googleMap = {
+     libraries: ['drawing'],
   apiKey: 'AIzaSyA-PvMX5r-LCVrYAXkeAV1OEA6N4XpaXe0',
 },
   ENV.contentSecurityPolicy = {

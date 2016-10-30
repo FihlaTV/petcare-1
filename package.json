@@ -42,5 +42,8 @@
     "ember-resolver": "^2.0.3",
     "ember-welcome-page": "^1.0.3",
     "loader.js": "^4.0.10"
+  },
+  "dependencies": {
+    "bootstrap-imageupload": "^1.1.3"
   }
 }

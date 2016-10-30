@@ -1,0 +1,33 @@
+<div class="container">
+<div class="row">
+        <div class="col-md-3">
+
+        </div>
+    <div class="col-md-6 well">
+	<h2 class="text-center">Avistamiento de mascota</h2>
+
+	<div class="col-md-12">
+		<div class="form-group">
+			<label>¿Dónde lo viste?</label>
+			{{input class="form-control"}}
+		</div>
+				
+		<div class="form-group">
+			<label>Agrega una descripción</label>
+			{{input class="form-control"}}
+		</div>
+
+		<form name="formulario" action="envio.php" method="post" enctype="multipart/form-data">
+			<input name="archivo" type="file" size="20">
+		</form>
+		<div class="container-fluid">
+			<div class="col-md-6 col-md-offset-3">
+				<a><img src="assets/images/pet.gif"  width="500" height="300" class="img-responsive" /></a>
+			</div>
+		</div>
+		
+	</div>
+	</div>
+
+</div>
+</div>

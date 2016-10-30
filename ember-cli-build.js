@@ -22,8 +22,15 @@ module.exports = function(defaults) {
   app.import('vendor/css/bootstrap-theme.min.css');
   app.import('vendor/css/bootstrap.min.css');
 
-
+  app.import('vendor/css/bootstrap-imageupload.min.css');
+  app.import('vendor/css/bootstrap-imageupload.css');
   app.import('vendor/js/bootstrap.min.js');
+  app.import('vendor/js/bootstrap-imageupload.min.js');
+  app.import('vendor/js/bootstrap-imageupload.js');
+  app.import('vendor/css/bootstrap-datetimepicker.min.css');
+  app.import('vendor/js/moment-with-locales.js');
+  app.import('vendor/js/bootstrap.min.js');
+  app.import('vendor/js/bootstrap-datetimepicker.js');
 
 
   return app.toTree();
