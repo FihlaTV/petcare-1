@@ -46,6 +46,7 @@ module.exports = function(environment) {
 
   }
   ENV.googleMap = {
+     libraries: ['drawing'],
   apiKey: 'AIzaSyA-PvMX5r-LCVrYAXkeAV1OEA6N4XpaXe0',
 },
   ENV.contentSecurityPolicy = {

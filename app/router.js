@@ -8,12 +8,12 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('home', {path: '/home'});
-  this.route('perdidos');
-  this.route('callejeros');
+  this.route('perdidos', {path: '/perdidos'});
+  this.route('callejeros', {path: '/callejeros'});
   this.route('pet', function() {
     this.route('new');
   });
-  this.route('reporte');
+  this.route('reporte', {path: '/reporte'});
 });
 
 export default Router;
