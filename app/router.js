@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('home');
   this.route('perdidos');
   this.route('callejeros');
+  this.route('report', {path: '/report'});
 });
 
 export default Router;
