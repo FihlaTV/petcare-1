@@ -10,9 +10,12 @@ Router.map(function() {
   this.route('home', {path: '/home'});
   this.route('perdidos');
   this.route('callejeros');
+
   this.route('pet', function() {
-    this.route('new');
+  	this.route('new');
+    this.route('description');
   });
+  
   this.route('reporte');
 });
 
