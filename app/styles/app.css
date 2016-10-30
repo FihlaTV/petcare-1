@@ -1,0 +1,12 @@
+a.avatar {
+  padding: 5px !important;
+}
+
+.avatar > img {
+  max-height: 50px;
+  border-radius: 50%;
+}
+
+.ember-cli-g-map {
+  height: 300px;
+}

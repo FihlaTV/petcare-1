@@ -1,0 +1,73 @@
+{{!-- Para estilos revisar nav-bar-custom.css --}}
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="avatar">
+            <img alt="Profile" src="https://s-media-cache-ak0.pinimg.com/236x/87/61/f9/8761f91014d0fd1cc63d9ea5f684f96d.jpg" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+{{!--
+  Para poder trabajar con los mapas, corran lo siguiente:
+    ember install ember-cli-g-maps
+
+  Luego deben configurar el archivo config/environment.js, van a ver algo parecido a :
+    APP: {
+
+    },
+
+    // Código que deben insertar
+
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-eval' *.googleapis.com maps.gstatic.com",
+      'font-src': "'self' fonts.gstatic.com",
+      'connect-src': "'self' maps.gstatic.com",
+      'img-src': "'self' *.googleapis.com maps.gstatic.com csi.gstatic.com",
+      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com maps.gstatic.com"
+    }
+
+  Pueden tomar de referencia el archivo que está en este branch. Luego necesitan agregar
+  lo siguiente al archivo app/styles/app.css:
+
+    /* pueden variar la altura dependiendo de cómo les guste más */
+    .ember-cli-g-map {
+      height: 300px;
+    }
+
+  Y luego ya solamente lo insertan
+--}}
+
+{{g-maps name="my-map" lat=20.096370 lng=-98.766394 zoom=8}}
+
+{{!--
+  Aquí hay un plugin para poder subir archivos y verlos:
+    ember install ember install ember-cli-file-picker
+
+  Y lo insertan con
+
+  {{#file-picker fileLoaded="fileLoaded"}}
+    Drag here or click to upload a file
+  {{/file-picker}}
+
+  Deben implementar el action "fileLoaded" o cualquier nombre que se les ocurra
+  en su controlador para atrapar el evento de que el archivo ya se cargó en
+  memoria y está listo para enviarse aquí un ejemplo de cómo pueden subirlo
+  a rails:
+
+  https://github.com/funkensturm/ember-cli-file-picker#use-with-carrierwave
+
+  Y aquí por si quieres cambiar los estilos en css deben implementar estas clases:
+  https://github.com/funkensturm/ember-cli-file-picker#css
+--}}
+
+{{#file-picker fileLoaded="fileLoaded"}}
+  Drag here or click to upload a file
+{{/file-picker}}
